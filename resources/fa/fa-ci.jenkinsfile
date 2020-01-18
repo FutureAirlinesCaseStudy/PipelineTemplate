@@ -1,0 +1,15 @@
+@Library('fa') import faCI
+import org.fa.*
+
+crisSpsCI([
+    pod: pod,
+    skip_sonar_analysis: false,
+    skip_quality_gate: false,
+    git_repo: "",
+    branch: '',
+    git_checkout_credentials: '',
+    pom_file: "",
+	settings_file: "",
+    sonar_url: '',
+    sonar_inst: '',
+])
