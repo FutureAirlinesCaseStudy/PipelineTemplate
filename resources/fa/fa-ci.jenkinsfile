@@ -1,15 +1,13 @@
 @Library('fa') import faCI
 import org.fa.*
 
-crisSpsCI([
-    pod: pod,
+faCI([
     skip_sonar_analysis: false,
     skip_quality_gate: false,
-    git_repo: "",
-    branch: '',
-    git_checkout_credentials: '',
-    pom_file: "",
-	settings_file: "",
-    sonar_url: '',
-    sonar_inst: '',
+    git_repo: "https://github.com/FutureAirlinesCaseStudy/SampleSpringBootApp.git",
+    branch: 'master',
+    git_checkout_credentials: 'github-checkout',
+    pom_file: "pom.xml",
+    settings_file: "settings.xml",
+    sonar_url: 'http://18.219.138.180:9000'
 ])
