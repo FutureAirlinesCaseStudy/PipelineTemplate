@@ -90,7 +90,7 @@ def call(Map config) {
                 stage('Docker Image Build & Push') {
                     steps{
                         script{
-								sh 'mvn dockerfile:build' 
+				sh 'mvn dockerfile:build' 
                             }
                         }
                     }
