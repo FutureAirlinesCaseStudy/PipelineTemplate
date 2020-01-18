@@ -38,7 +38,7 @@ def call(Map config) {
                     steps{
                         script{
                             mvn.standardBuildUnitTest( 
-				${config.pom_file}",
+				"${config.pom_file}",
                                 "${config.settings_file}"
 				)
                         }
