@@ -1,4 +1,3 @@
-@Library('fa')
 import org.fa.*
 import static groovy.json.JsonOutput.*
 
