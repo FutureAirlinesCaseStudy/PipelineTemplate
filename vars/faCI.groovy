@@ -97,6 +97,3 @@ def call(Map config) {
                 }
             }                    
         }
-    }
-  
-}
