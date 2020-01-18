@@ -7,7 +7,6 @@ def call(Map config) {
     def checkout = new gitCheckout()
     def mvn = new mvnHelpers()
     def sonar = new sonarScanner()
-    def nexus = new uploadNexus()
     buildNumber = "${BUILD_NUMBER}"   
 
     pipeline {
