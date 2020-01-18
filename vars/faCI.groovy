@@ -19,8 +19,7 @@ def call(Map config) {
             stage('Checkout') {
                 steps {
                     script {
-                        notifyBitbucket(considerUnstableAsSuccess: true)
-                        def gitDetails = checkout.standard(
+  		            def gitDetails = checkout.standard(
                             "${config.git_repo}",
                             "${config.branch}",
                             "${config.git_checkout_credentials}"
@@ -39,9 +38,9 @@ def call(Map config) {
                     steps{
                         script{
                             mvn.standardBuildUnitTest( 
-								"${config.pom_file}",
+				${config.pom_file}",
                                 "${config.settings_file}"
-								)
+				)
                         }
                     }                   
             }
