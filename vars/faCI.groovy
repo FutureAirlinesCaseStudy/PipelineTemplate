@@ -9,7 +9,9 @@ def call(Map config) {
     buildNumber = "${BUILD_NUMBER}"   
 
     pipeline {
-        agent docker
+        agent {
+		label = "docker"
+		}
         options {
             timeout(time: config.timeout ?: 90 , unit: 'MINUTES')
             buildDiscarder(logRotator(numToKeepStr: '10', artifactNumToKeepStr: '5'))
