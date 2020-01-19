@@ -10,7 +10,7 @@ def call(Map config) {
 
     pipeline {
         agent {
-		label  "docker"
+		any
 		}
         options {
             timeout(time: config.timeout ?: 90 , unit: 'MINUTES')
